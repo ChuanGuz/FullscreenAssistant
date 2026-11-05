@@ -4,9 +4,7 @@
 
 **[下载全屏助手 EXE](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant-v1.2.2.exe)** · [发布页与源码下载](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest)
 
-当前版本 **1.2.2**，支持 **Windows 10 / 11 64 位**，需要 .NET Framework 4.x（现代 Windows 通常已自带）。无需安装。
-
-仓库目前为私有，查看和下载需要登录有访问权限的 GitHub 账号。
+当前版本 **1.2.2**
 
 ## 怎么使用
 
