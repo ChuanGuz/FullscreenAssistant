@@ -88,11 +88,6 @@ namespace FullscreenAssistant
             var header = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(20, 32, 52), Margin = Padding.Empty };
             header.Controls.Add(new Label { Text = "全屏助手", Font = new Font(Font.FontFamily, 23, FontStyle.Bold),
                 ForeColor = Color.White, Location = new Point(28, 18), AutoSize = true });
-            header.Controls.Add(new Label { Text = "选中窗口，一键全屏。需要时，恢复到操作前的样子。", ForeColor = Color.FromArgb(184, 201, 224),
-                Location = new Point(30, 70), AutoSize = true });
-            var badge = new Label { Text = "全屏 / 恢复 · 1.2", ForeColor = Color.FromArgb(165, 201, 255),
-                TextAlign = ContentAlignment.MiddleRight, Dock = DockStyle.Right, Width = 200, Padding = new Padding(0, 0, 28, 0) };
-            header.Controls.Add(badge);
             root.Controls.Add(header, 0, 0);
 
             var body = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(26, 18, 26, 12),
@@ -161,8 +156,6 @@ namespace FullscreenAssistant
             topCrop.AccessibleName = "顶部额外裁切像素，仅兼容模式可用";
             choices.Controls.Add(monitors, 0, 1); choices.Controls.Add(modes, 1, 1); choices.Controls.Add(topCrop, 2, 1);
             body.Controls.Add(choices, 0, 3);
-            body.Controls.Add(new Label { Text = "智能模式识别 RPG Maker MV / MZ 游戏后优先切换原生全屏；其他窗口使用标准方式。",
-                ForeColor = muted, Dock = DockStyle.Fill, TextAlign = ContentAlignment.MiddleLeft }, 0, 4);
 
             var actions = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 5, RowCount = 1, Margin = Padding.Empty };
             actions.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
