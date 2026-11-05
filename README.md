@@ -2,7 +2,7 @@
 
 选择已打开的游戏窗口，点击全屏；需要时，一键恢复原来的位置、大小和边框。
 
-**[下载便携版 ZIP](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant-v1.2-portable.zip)** · **[直接下载 EXE](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant.exe)** · [版本与更新](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest)
+**[下载全屏助手.exe](https://github.com/ChuanGuz/FullscreenAssistant/raw/refs/heads/main/%E5%85%A8%E5%B1%8F%E5%8A%A9%E6%89%8B.exe)**
 
 当前版本 **1.2**，支持 **Windows 10 / 11 64 位**，需要 .NET Framework 4.x（现代 Windows 通常已自带）。无需安装。
 
@@ -11,7 +11,7 @@
 ## 怎么使用
 
 1. 打开游戏，先切换到窗口模式，等待加载到标题画面。
-2. 解压便携版，双击“全屏助手.exe”；单独下载的“FullscreenAssistant.exe”也可以直接运行。
+2. 点击上方链接下载“全屏助手.exe”，双击即可运行，无需解压或安装。
 3. 从列表里选中游戏窗口，保持默认的“智能全屏”，点击蓝色“全屏”按钮。
 4. 需要恢复时，按 Alt+Tab 切回助手，选中窗口，点击“恢复窗口”。
 
@@ -60,31 +60,6 @@
 - 出现黑屏、裁切或画面异常时，先用“恢复全部”、恢复快捷键或托盘恢复。
 
 助手通过 Windows 窗口功能和已识别游戏的原有快捷键工作，不修改游戏文件，不向游戏注入 DLL。
-
-## 源码与构建
-
-```text
-全屏助手.exe
-使用说明.txt
-README.md
-开发资料/
-├─ 源码/              C# 源码、现有图标及程序清单
-├─ 验证/              测试源码、执行脚本与验证说明
-├─ 重新构建.cmd
-└─ 更新说明.txt
-```
-
-双击“开发资料/重新构建.cmd”，使用系统自带的 C# 编译器，在上一级生成“全屏助手.exe”，无需安装 .NET SDK。构建前先正常退出助手。
-
-此前已完成 14 项基础窗口测试、3 项自绘边框回归，以及检测、全屏、恢复、退出恢复的界面流程验证。曾使用《樱御前》（MZ / NW.js）验证 2560×1440 原生全屏与准确恢复。这些验证不代表所有游戏均已测试；MV 标准适配已实现，真实游戏验证使用 MZ。
-
-常规测试只操作独立测试窗口，不会自动打开真实游戏：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\开发资料\验证\run-tests.ps1
-```
-
-真实游戏适配测试见“开发资料/验证/RpgNativeTests.cs”，需要显式提供游戏 EXE 路径后单独运行。仓库保留测试源码，旧测试输出和截图已在整理时移除。
 
 ## 反馈问题
 

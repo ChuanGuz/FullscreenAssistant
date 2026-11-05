@@ -13,3 +13,7 @@ obj/
 开发资料/验证/*state.xml
 Thumbs.db
 Desktop.ini
+
+# Local development materials are not published.
+/开发资料/
+/使用说明.txt
