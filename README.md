@@ -4,7 +4,7 @@
 
 **[下载全屏助手 EXE](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant-v1.2.2.exe)** · [发布页与源码下载](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest)
 
-当前版本 **1.2.2**
+当前版本为 **1.2.2**
 
 ## 怎么使用
 
