@@ -1,0 +1,15 @@
+窗口恢复记录.xml
+窗口恢复记录.xml.tmp
+*.journal.xml
+*.tmp
+*.log
+.vs/
+bin/
+obj/
+开发资料/验证/*.exe
+开发资料/验证/*.dll
+开发资料/验证/*results.txt
+开发资料/验证/*ready*.txt
+开发资料/验证/*state.xml
+Thumbs.db
+Desktop.ini
