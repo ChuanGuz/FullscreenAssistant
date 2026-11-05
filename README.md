@@ -2,16 +2,16 @@
 
 选择已打开的游戏窗口，点击全屏；需要时，一键恢复原来的位置、大小和边框。
 
-**[下载全屏助手 EXE](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant-v1.2.1.exe)** · [发布页与源码下载](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest)
+**[下载全屏助手 EXE](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest/download/FullscreenAssistant-v1.2.2.exe)** · [发布页与源码下载](https://github.com/ChuanGuz/FullscreenAssistant/releases/latest)
 
-当前版本 **1.2.1**，支持 **Windows 10 / 11 64 位**，需要 .NET Framework 4.x（现代 Windows 通常已自带）。无需安装。
+当前版本 **1.2.2**，支持 **Windows 10 / 11 64 位**，需要 .NET Framework 4.x（现代 Windows 通常已自带）。无需安装。
 
 仓库目前为私有，查看和下载需要登录有访问权限的 GitHub 账号。
 
 ## 怎么使用
 
 1. 打开游戏，先切换到窗口模式，等待加载到标题画面。
-2. 下载“FullscreenAssistant-v1.2.1.exe”，双击即可运行，无需解压或安装。
+2. 下载“FullscreenAssistant-v1.2.2.exe”，双击即可运行，无需解压或安装。
 3. 从列表里选中游戏窗口，保持默认的“智能全屏”，点击蓝色“全屏”按钮。
 4. 需要恢复时，按 Alt+Tab 切回助手，选中窗口，点击“恢复窗口”。
 
@@ -66,7 +66,7 @@
 普通用户只需下载 EXE。需要源码时，可浏览本仓库的“开发资料”，或在发布页下载 GitHub 自动生成的 Source code 源码包。
 
 ```text
-全屏助手-v1.2.1.exe
+全屏助手-v1.2.2.exe
 使用说明.txt
 README.md
 开发资料/
@@ -76,7 +76,7 @@ README.md
 └─ 更新说明.txt
 ```
 
-双击“开发资料/重新构建.cmd”，使用系统自带的 C# 编译器，在上一级生成“全屏助手-v1.2.1.exe”，无需安装 .NET SDK。构建前先正常退出助手。
+双击“开发资料/重新构建.cmd”，使用系统自带的 C# 编译器，在上一级生成“全屏助手-v1.2.2.exe”，无需安装 .NET SDK。构建前先正常退出助手。
 
 此前已完成 14 项基础窗口测试、3 项自绘边框回归，以及检测、全屏、恢复、退出恢复的界面流程验证。曾使用《樱御前》（MZ / NW.js）验证 2560×1440 原生全屏与准确恢复。这些验证不代表所有游戏均已测试；MV 标准适配已实现，真实游戏验证使用 MZ。
 

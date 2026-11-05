@@ -80,24 +80,24 @@ namespace FullscreenAssistant
         private void BuildUi()
         {
             var root = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 1, RowCount = 3, Margin = Padding.Empty };
-            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 110));
+            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 64));
             root.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 46));
+            root.RowStyles.Add(new RowStyle(SizeType.Absolute, 42));
             Controls.Add(root);
 
             var header = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(20, 32, 52), Margin = Padding.Empty };
-            header.Controls.Add(new Label { Text = "全屏助手", Font = new Font(Font.FontFamily, 23, FontStyle.Bold),
-                ForeColor = Color.White, Location = new Point(28, 18), AutoSize = true });
+            header.Controls.Add(new Label { Text = "全屏助手", Font = new Font(Font.FontFamily, 18, FontStyle.Bold),
+                ForeColor = Color.White, Dock = DockStyle.Fill, TextAlign = ContentAlignment.MiddleLeft,
+                Padding = new Padding(24, 0, 0, 0), Margin = Padding.Empty });
             root.Controls.Add(header, 0, 0);
 
-            var body = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(26, 18, 26, 12),
-                ColumnCount = 1, RowCount = 6, Margin = Padding.Empty };
+            var body = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(24, 14, 24, 12),
+                ColumnCount = 1, RowCount = 5, Margin = Padding.Empty };
             body.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));
             body.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
-            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 35));
-            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 72));
-            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 30));
-            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 66));
+            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 32));
+            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 68));
+            body.RowStyles.Add(new RowStyle(SizeType.Absolute, 62));
             root.Controls.Add(body, 0, 1);
 
             var searchRow = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 4, RowCount = 1, Margin = Padding.Empty };
@@ -169,9 +169,9 @@ namespace FullscreenAssistant
             actions.Controls.Add(enter, 0, 0); actions.Controls.Add(restore, 1, 0); actions.Controls.Add(restoreAll, 2, 0);
             shortcut.Text = "Ctrl + Alt + F11  恢复全部\r\n关闭工具时，也会自动恢复窗口";
             shortcut.ForeColor = muted; shortcut.Dock = DockStyle.Fill; shortcut.TextAlign = ContentAlignment.MiddleRight;
-            actions.Controls.Add(shortcut, 4, 0); body.Controls.Add(actions, 0, 5);
+            actions.Controls.Add(shortcut, 4, 0); body.Controls.Add(actions, 0, 4);
 
-            var statusPanel = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(233, 239, 247), Margin = Padding.Empty, Padding = new Padding(26, 0, 26, 0) };
+            var statusPanel = new Panel { Dock = DockStyle.Fill, BackColor = Color.FromArgb(233, 239, 247), Margin = Padding.Empty, Padding = new Padding(24, 0, 24, 0) };
             status.Dock = DockStyle.Fill; status.TextAlign = ContentAlignment.MiddleLeft; status.AutoEllipsis = true;
             statusPanel.Controls.Add(status); root.Controls.Add(statusPanel, 0, 2);
             enter.Enabled = restore.Enabled = restoreAll.Enabled = false;
